@@ -1,0 +1,7 @@
+[user]
+	name = Dmytro Yashkir
+	email = dima.yashkir@gmail.com
+[color]
+	ui = true
+[alias]
+  todo = grep --heading --break --ignore-case -e ' FIX: *' -e ' TODO: *'
