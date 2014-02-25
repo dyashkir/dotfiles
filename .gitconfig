@@ -5,3 +5,5 @@
 	ui = true
 [alias]
   todo = grep --heading --break --ignore-case -e ' FIX: *' -e ' TODO: *'
+[push]
+	default = simple
