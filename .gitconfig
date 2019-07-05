@@ -1,9 +1,14 @@
 [user]
 	name = Dmytro Yashkir
-	email = dima.yashkir@gmail.com
+	email = dima@dyashkir.com
 [color]
 	ui = true
 [alias]
   todo = grep --heading --break --ignore-case -e ' FIX: *' -e ' TODO: *'
 [push]
 	default = simple
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
